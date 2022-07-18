@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image classification with ml5.js</title>
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://use.fontawesome.com/3a2eaf6206.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Image classification with <span id="span_h1">MobileNet</span></h1>
+      <p>Developed by Anne Livia</p>
+      <img id="imageUploaded" src="assets/images/no-image.jpg" />
+      <div class="input_area">
+        <label for="img_upload">
+          <p>Selecione a imagem</p>
+          <i class="fa fa-2x fa-camera"></i>
+          <input type="file" id="img_upload" name="img" accept="image/*" />
+          <br />
+          <span id="imageName"></span>
+        </label>
+      </div>
+    </div>
+    <script src="assets/js/sketch.js"></script>
+  </body>
+</html>
